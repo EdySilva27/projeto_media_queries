@@ -1,0 +1,95 @@
+/*------------>Todas as demais mídias<-------------*/
+
+/*-------------------------------------------------
+Typical devices breakpoints 2022:
+---------------------------------------------------
+Using min-width
+-------------------
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+---------------------------------------------------
+Using max-width
+------------------
+@media (max-width: 575.98px) { ... }
+
+Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... } 
+-------------------------------------------------- */
+
+
+
+@media print {
+    * {font-family: 'Courier New', Courier, monospace;}
+
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    main {
+        border: 2px solid black;
+        max-width: 80vw;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+    a, span{display: none;}
+    #linkPrint {display: block;}
+}
+
+/* @media screen and (max-width: 575.98px) {}
+@media  screen and (min-width: 576px) and (max-width: 767.98px) {}  ----- essa mídia pode ser ignorada porque a pagina inicial já foi configurada para pequenas mídias pelo método Mobile First ---- */
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) { /*Tablet*/
+    body{
+    background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+    #linkPrint {display: none;}
+}
+
+@media  screen and (min-width: 992px) and (max-width: 1199.98px) { /*Desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+    #linkPrint {display: none;}
+}
+
+@media screen and (min-width:1200px) { /*Telas grandes*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+    #linkPrint {display: none;}
+}
