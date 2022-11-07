@@ -27,6 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - Github Desktop
+- Github Pages
 - Gimp
 
 ## 💻 Projeto
