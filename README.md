@@ -27,7 +27,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - Github Desktop
-- Github Pages
 - Gimp
 
 ## 💻 Projeto
@@ -36,7 +35,7 @@ O projeto consiste em página desenvolvida com o método Mobile First e aplicaç
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://github.com/EdySilva27?tab=repositories).
+Você pode visualizar o layout do projeto através [DESSE LINK](https://edysilva27.github.io/projeto_media_queries/).
 
 ## :memo: Licença
 
